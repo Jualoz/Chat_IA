@@ -1,7 +1,6 @@
 from config.ia import client, qwen_model
 import streamlit as st
 
-# Configuración inicial del título
 st.title("💬 Chatbot")
 
 # Inicialización del estado de sesión

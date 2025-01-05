@@ -10,3 +10,4 @@ client = InferenceClient(api_key=token)
 
 # Modelos
 qwen_model = "Qwen/Qwen2.5-72B-Instruct"
+sentiment = "sentiment-analysis"
