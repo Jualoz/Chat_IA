@@ -40,10 +40,11 @@ pip install -r requirements.txt
 
 El archivo `requirements.txt` contiene:
 
-```
-streamlit
-huggingface_hub
-transformers
+```bash
+    streamlit
+    huggingface_hub
+    transformers
+    torch
 ```
 
 ---
@@ -68,9 +69,11 @@ cd Chat_IA
 ### **3. Configurar el Token en el Proyecto**
 
 1. Inicia el proyecto con el siguiente comando:
+
    ```bash
    streamlit run index.py
    ```
+
 2. En la barra lateral, introduce el token en la sección **Configurar Token HF** y haz clic en **Guardar Token**.
 
 ---
