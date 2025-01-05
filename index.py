@@ -20,6 +20,7 @@ with st.sidebar:
             if token_input:
                 st.session_state["HF_TOKEN"] = token_input
                 st.success("Token guardado correctamente.")
+                st.rerun()
             else:
                 st.error("El token no puede estar vacío.")
 
