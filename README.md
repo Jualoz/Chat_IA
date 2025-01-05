@@ -105,7 +105,7 @@ El siguiente diagrama explica el flujo del tercer chat:
 3. **Generación de Imagen:** Se utiliza el modelo seleccionado para crear la imagen.
 4. **Resultado:** Se muestra el texto optimizado y la imagen generada al usuario.
 
-![Diagrama de Funcionamiento](./assets/diagrama.drawio)
+![Diagrama de Funcionamiento](./assets/diagrama.drawio.png)
 
 ---
 
