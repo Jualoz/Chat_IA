@@ -11,9 +11,15 @@ st.write("Esta aplicación utiliza el modelo de Transformers para analizar el se
 user_input = st.text_area("Escribe un texto para analizar:", "We are very happy to show you the 🤗 Transformers library.")
 
 if st.button("Analizar Sentimiento"):
+    with st.spinner("Generando respuesta..."):
+        try:
+            response = classifier(user_input)
+            result = response[0]  # primer resultado
+        except Exception as e:
+            msg = "Hubo un error procesando tu solicitud. Por favor, intenta nuevamente."
+            st.error(f"Error: {e}")
+
     # Analiza el texto ingresado
-    response = classifier(user_input)
-    result = response[0]  # primer resultado
     
     # Formatea los resultados
     label = result['label']
